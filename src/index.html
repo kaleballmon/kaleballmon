@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Kaleb Allmon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"><link href="assets/css/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        let things_kaleb_are = [
+          "a community member.",
+          "an engineer.",
+          "a record collector.",
+        ]
+        let things_kaleb_are_index = 0
+        function things_kaleb_are_fade() {
+          $("#kaleb-id").fadeOut(1000, function() {
+              $("#kaleb-id").html(things_kaleb_are[things_kaleb_are_index])
+              $("#kaleb-id").fadeIn(1000);
+              things_kaleb_are_index++
+              if (things_kaleb_are_index == 3) {
+                things_kaleb_are_index = 0
+              }
+             setTimeout(things_kaleb_are_fade, 4000);   
+          });
+        }
+        things_kaleb_are_fade();
+      })
+    </script>
+  </head>
+  <body>
+    <h1 class="kaleb-is">Kaleb is <span id="kaleb-id"></span></h1>
+    <p class="contact">I can be contacted about any of those things at <a href="mailto:kalebdallmon@gmail.com">kalebdallmon@gmail.com</a>.</p>
+    <div class="picture-container">
+      <p class="picture-header">This is my favorite painting because it kind of looks like me.</p>
+      <img class="picture" src="assets/images/basquiat.jpg" /> 
+    </div>
+  </body>
+</html>
