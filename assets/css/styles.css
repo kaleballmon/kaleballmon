@@ -4,7 +4,7 @@ body {
   font-weight: 200;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-  background-color: #F2F3F4
+  background-image: url("/assets/images/background.svg");
 }
 
 .kaleb-is {
@@ -37,14 +37,12 @@ body {
 .contact {
   margin-top: .25em;
   margin-left: 1.5rem;
-  color: #808080;
   font-size: 12px;
 }
 
 @media (min-width: 600px) {
   .contact {
     font-size: 16px;
-    color: #808080
   }
 }
 
