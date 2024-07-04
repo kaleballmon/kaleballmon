@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # Adjust this if your default branch is not 'main'
+      - main
 
   workflow_dispatch:
 
@@ -18,7 +18,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '16'  # Adjust the Node.js version if needed
+        node-version: '16'
 
     - name: Install dependencies
       run: npm install
@@ -31,4 +31,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # Adjust this to your build output directory
+        publish_dir: dist
