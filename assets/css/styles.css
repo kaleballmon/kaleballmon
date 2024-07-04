@@ -15,6 +15,19 @@ body {
   font-size: 24px;
 }
 
+.post-title {
+  font-style: normal;
+  font-weight: 200;
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+  font-size: 24px;
+}
+
+.post-date {
+  margin-left: 1.5rem;
+  margin-top: .5em;
+}
+
 @media (min-width: 600px) {
   .kaleb-is {
     font-size: 36px;
@@ -35,7 +48,10 @@ body {
   }
 }
 
-.contact a:link {
+.contact a:link, 
+.contact a:visited, 
+.contact a:hover, 
+.contact a:active {
   color: #CE2939
 }
 
@@ -56,4 +72,62 @@ body {
   display: block;
   margin: 0 auto;
   width: 300px;
+}
+
+main.main-post {
+  margin-top: 2em; 
+  margin-left: 2em; 
+  margin-right: 2em; 
+}
+
+#canvas {
+  margin: 0 auto; 
+  height: 300px;
+  width: 300px;
+}
+
+.canvas-caption {
+  text-align: center;
+}
+
+.home-link {
+  display: block;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1.5rem;
+  color: #CE2939
+}
+
+.rick-pic-container {
+  margin: 2em 0;
+}
+
+.rick-pic {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.rick-pic-caption {
+  margin: .5em auto;
+  width: 300px;
+  
+}
+
+@media (min-width: 600px) {
+  .rick-pic {
+    width: 500px;
+  }
+  .rick-pic-caption {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .rick-pic {
+    width: 800px;
+  }
+  .rick-pic-caption {
+    width: 800px;
+  }
 }
